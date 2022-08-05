@@ -1,5 +1,6 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import Spinner from '../layout/Spinner';
 
 function UserResults() {
     const [users, setUsers] = useState([])
@@ -33,7 +34,7 @@ const fetchUsers = async () =>{
           
         )
     } else {
-        return <h3>Loading....</h3>
+        return <Spinner />
     }
 }
 
