@@ -33,7 +33,7 @@ const fetchUsers = async () =>{
           
         )
     } else {
-        return <h3>Loading...</h3>
+        return <h3>Loading....</h3>
     }
 }
 
