@@ -5,12 +5,12 @@ import { FaGithub } from 'react-icons/fa'
 
 const Navbar = ({title}) => {
   return (
-    <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content text-white">
+    <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
       {/* Links on the Left*/}
-      <div className="container mx-auto">
+      <div className="container mx-auto text-white">
         <div className="flex-none px-2 mx-2">
           <Link to='/' className='text-lg font-bold align-middle'>
-            <FaGithub className='inline pr-2 text-3xl' />
+            <FaGithub className='inline pr-2 text-3xl ' />
             {title}
           </Link>
         </div>
