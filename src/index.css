@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    color: rgb(235, 233, 233);
+/* Font-color white*/
+body{ 
+    color: rgb(238, 233, 233);
 }
