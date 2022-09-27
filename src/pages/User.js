@@ -83,7 +83,7 @@ function User() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-row rounded-lg shadow-md bg-base-100 stats overflow-hidden">
+            <div className="w-full rounded-lg shadow-md bg-base-100 stats stats-vertical sm:stats-horizontal overflow-hidden">
               {location && (
                 <div className="stat shrink ">
                   <div className="stat-title text-md">Location</div>
@@ -93,7 +93,7 @@ function User() {
                 </div>
               )}
               {blog && (
-                <div className="stat w-full">
+                <div className="stat">
                   <div className="stat-title text-md">Website</div>
                   <div className="text-lg stat-value text-white">
                     <a
@@ -123,10 +123,10 @@ function User() {
             </div>
           </div>
         </div>
-        <div className="flex py-5 mb-6 rounded-lg shadow-md bg-base-100 stats">
+        <div className="w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats stats-vertical md:stats-horizontal">
           <div className="stat">
             <div className="stat-figure text-accent">
-              <FaUsers className="text-3xl md:text-5xl" />
+              <FaUsers className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Followers</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
@@ -135,7 +135,7 @@ function User() {
           </div>
           <div className="stat">
             <div className="stat-figure text-accent">
-              <FaUserFriends className="text-3xl md:text-5xl" />
+              <FaUserFriends className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Following</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
@@ -144,7 +144,7 @@ function User() {
           </div>
           <div className="stat">
             <div className="stat-figure text-accent">
-              <FaCodepen className="text-3xl md:text-5xl" />
+              <FaCodepen className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Public Repos</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
@@ -153,7 +153,7 @@ function User() {
           </div>
           <div className="stat">
             <div className="stat-figure text-accent">
-              <FaStore className="text-3xl md:text-5xl" />
+              <FaStore className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Public Gist</div>
             <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
