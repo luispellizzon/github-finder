@@ -1,10 +1,11 @@
 import { useState, useContext } from "react";
 import GithubContext from "../../context/github/GithubContext";
 import AlertContext from "../../context/alert/AlertContext";
+import { searchUsers } from "../../context/github/GitHubActions";
 
 function UserSearch() {
   const [text, setText] = useState("");
-  const { users, searchUsers, clearUsers } = useContext(GithubContext);
+  const { users, clearUsers, dispatch } = useContext(GithubContext);
 
   const { setAlert } = useContext(AlertContext);
 
@@ -12,12 +13,22 @@ function UserSearch() {
     setText(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    text === ""
-      ? setAlert("Please enter a Github user", "error")
-      : searchUsers(text) && setText("");
+    if (text === "") {
+      setAlert("Please enter a Github user", "error");
+    } else {
+      dispatch({
+        type: "SET_LOADING",
+      });
+      const users = await searchUsers(text);
+      dispatch({
+        type: "GET_USERS",
+        payload: users,
+      });
+      setText("");
+    }
   };
 
   return (
