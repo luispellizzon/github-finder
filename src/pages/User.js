@@ -17,6 +17,8 @@ function User() {
     dispatch({
       type: "SET_LOADING",
     });
+
+    // Get user data to display
     const getUserData = async () => {
       const userData = await getUser(params.login);
       dispatch({
@@ -24,8 +26,17 @@ function User() {
         payload: userData,
       });
     };
-
     getUserData();
+
+    // Get repos from user and display
+    const getUserRepos = async () => {
+      const userRepos = await getRepos(params.login);
+      dispatch({
+        type: "GET_REPOS",
+        payload: userRepos,
+      });
+    };
+    getUserRepos();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
