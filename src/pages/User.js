@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Spinner from "../components/layout/Spinner";
 import GithubContext from "../context/github/GithubContext";
 import RepoList from "../components/repos/RepoList";
-import { getUser, getRepos } from "../context/github/GitHubActions";
+import { getUserAndRepos } from "../context/github/GitHubActions";
 
 function User() {
   const { user, loading, repos, dispatch } = useContext(GithubContext);
@@ -20,23 +20,14 @@ function User() {
 
     // Get user data to display
     const getUserData = async () => {
-      const userData = await getUser(params.login);
+      const userData = await getUserAndRepos(params.login);
       dispatch({
-        type: "GET_USER",
+        type: "GET_USER_AND_REPOS",
         payload: userData,
       });
     };
     getUserData();
 
-    // Get repos from user and display
-    const getUserRepos = async () => {
-      const userRepos = await getRepos(params.login);
-      dispatch({
-        type: "GET_REPOS",
-        payload: userRepos,
-      });
-    };
-    getUserRepos();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
