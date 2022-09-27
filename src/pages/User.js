@@ -131,7 +131,7 @@ function User() {
               <FaUsers className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Followers</div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
+            <div className="stat-value pr-5 text-3xl text-white">
               {followers}
             </div>
           </div>
@@ -140,7 +140,7 @@ function User() {
               <FaUserFriends className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Following</div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
+            <div className="stat-value pr-5 text-3xl text-white">
               {following}
             </div>
           </div>
@@ -149,7 +149,7 @@ function User() {
               <FaCodepen className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Public Repos</div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
+            <div className="stat-value pr-5 text-3xl text-white">
               {public_repos}
             </div>
           </div>
@@ -158,7 +158,7 @@ function User() {
               <FaStore className="text-3xl md:text-4xl" />
             </div>
             <div className="stat-title pr-5">Public Gist</div>
-            <div className="stat-value pr-5 text-3xl md:text-4xl text-white">
+            <div className="stat-value pr-5 text-3xl text-white">
               {public_gists}
             </div>
           </div>
