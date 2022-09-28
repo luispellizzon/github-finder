@@ -19,11 +19,16 @@ photos go here
 
 
 
-## Cloning and start
-
-### Start
-
+## Cloning and getting into the folder
 ```
+git clone https://github.com/lhpellizzon/github-finder.git
+cd github-finder
+```
+
+## Installing and Start the project
+```
+npm install 
 npm start
-
 ```
+
+Happy Coding =)
