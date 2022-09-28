@@ -1,5 +1,6 @@
 # Github Finder app
 This app allows you to search and view a GitHub user profile.
+
 Live Demo : [Click Here](https://quickhub-finder.vercel.app/)
 
 ## What was used in this React project?
@@ -12,3 +13,17 @@ Live Demo : [Click Here](https://quickhub-finder.vercel.app/)
 - React Router
 - React Hooks : useState, useContext, useReducer
 
+## Preview
+
+photos go here
+
+
+
+## Cloning and start
+
+### Start
+
+```
+npm start
+
+```
