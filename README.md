@@ -1,4 +1,5 @@
 # Github Finder app
+
 This app allows you to search and view a GitHub user profile.
 
 Live Demo : [Click Here](https://quickhub-finder.vercel.app/)
@@ -15,19 +16,20 @@ Live Demo : [Click Here](https://quickhub-finder.vercel.app/)
 
 ## Preview
 
-photos go here
-
-
+<img src="./public/homepage.png" alt="homepage">
+<img src="./public/search-page.png" alt="homepage">
 
 ## Cloning and getting into the folder
+
 ```
 git clone https://github.com/lhpellizzon/github-finder.git
 cd github-finder
 ```
 
 ## Installing and Start the project
+
 ```
-npm install 
+npm install
 npm start
 ```
 
